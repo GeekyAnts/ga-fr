@@ -1,4 +1,4 @@
-class DependencyInjection {
+export class DependencyInjection {
   dictionary: Map<string, any> = new Map();
 
   set(name: string, value: any) {

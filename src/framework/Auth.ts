@@ -23,13 +23,13 @@ export default class Auth {
    * @returns Promise
    */
   public promtLogin(): Promise<Iuser> {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
       setTimeout(() => {
         const user = {
-          email: "saurabh@geekyants.com",
-          photoUrl: "",
-          displayName: "Saurabh",
-          userId: "2"
+          email: 'saurabh@geekyants.com',
+          photoUrl: '',
+          displayName: 'Saurabh',
+          userId: '2',
         };
         this.setUser(user);
         resolve(user);
